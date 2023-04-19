@@ -23,7 +23,7 @@ except mysql.connector.Error as error:
 		print("User name or password is wrong")
 	else:
 		print(error)
-else:
+else:  
 	db_connection.close()
  
-	#cara mudei aqui só o comentario mesmo
+#jsfoiasi9fhwqe
