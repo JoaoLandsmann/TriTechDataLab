@@ -25,5 +25,3 @@ except mysql.connector.Error as error:
 		print(error)
 else:  
 	db_connection.close()
- 
-#jsfoiasi9fhwqe
