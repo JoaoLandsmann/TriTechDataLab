@@ -25,3 +25,5 @@ except mysql.connector.Error as error:
 		print(error)
 else:
 	db_connection.close()
+ 
+	#cara mudei aqui só o comentario mesmo
