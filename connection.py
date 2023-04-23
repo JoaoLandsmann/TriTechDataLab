@@ -1,7 +1,7 @@
 from flask import Flask, render_template
 from flask_mysqldb import MySQL
 
-app = Flask(__name__, static_folder='/Users/jvlan/Desktop/PROJETAO PYTHON/templates')
+app = Flask(__name__, static_folder='D:\Xampp\htdocs\Projeto-Dos-Guri/templates')
 
 # configuração do mySQL
 app.config['MYSQL_HOST'] = 'localhost'
