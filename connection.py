@@ -18,7 +18,7 @@ mysql = MySQL(app)
 def index():
     # fazendo uma consulta nos módulos
     cur = mysql.connection.cursor()
-    cur.execute("SELECT * FROM modulos")
+    cur.execute("SELECT * FROM table_index")
     data = cur.fetchall()
     cur.close()
     return render_template('index.php', data=data)
@@ -33,13 +33,22 @@ def modulos():
     return render_template('modulos.php', data=data)
 
 @app.route('/bibliotecas.php')
-def modulos():
+def bibliotecas():
     # fazendo uma consulta nos módulos
     cur = mysql.connection.cursor()
-    cur.execute("SELECT * FROM modulos")
+    cur.execute("SELECT * FROM bibliotecas")
     data = cur.fetchall()
     cur.close()
     return render_template('bibliotecas.php', data=data)
+
+@app.route('/about.php')
+def about_us():
+    # fazendo uma consulta nos módulos
+    cur = mysql.connection.cursor()
+    cur.execute("SELECT * FROM about_us")
+    data = cur.fetchall()
+    cur.close()
+    return render_template('about.php', data=data)
 
 if __name__ == '__main__':
     app.run(debug=True)
