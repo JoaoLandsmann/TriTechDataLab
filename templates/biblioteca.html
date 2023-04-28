@@ -1,0 +1,920 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
+
+    <title>TTDL - Bibliotecas</title>
+
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+
+    <!-- Bootstrap core CSS -->
+    <link href="static/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="static/fontawesome.css">
+    <link rel="stylesheet" href="static/bibliotecas.css">
+    <link rel="stylesheet" href="static/owl.css">
+
+  </head>
+
+  <body>
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="jumper">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>  
+    <!-- Preloader End -->
+
+    <!-- Header -->
+    <header class="">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand" href="index.html"><h2>TTDL<em>.</em></h2></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home
+                  <span class="sr-only">(current)</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="biblioteca.html">Bibliotecas</a>
+              </li> 
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    
+    <!-- Page Content -->
+    <!-- Banner Starts Here -->
+    <div class="heading-page header-text">
+      <section class="page-heading" id="library-tittle">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="text-content">
+                <h4>Bibliotecas</h4>
+                <h3>Ciência de Dados</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- Banner Ends Here -->
+
+    <section class="blog-posts grid-system">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8">
+            <div class="all-blog-posts">
+              <div class="row">
+                <!-- NumPy -->
+                <div class="col-lg-6" id="content-box">
+                  <section class="library-box" id="Manipulação de Dados e Estatística">
+                    <div class="blog-post">
+                      <div class="down-content">
+                        <span>
+                          {% if apresenta1 %}
+                            {% for results in apresenta1 %}
+                              {{ results[1] }}
+                            {% endfor%}
+                          {% endif %}
+                        </span>
+                        <p>
+                          {% if apresenta1 %}
+                            {% for results in apresenta1 %}
+                              <z class="description">{{ results[2] }}</z>
+                              <a href="#" class="btn btn-primary ver-mais">Ver mais</a>
+                            {% endfor %}
+                          {% endif %}
+                        </p>
+                        <div class="post-options">
+                          <div class="row">
+                            <div class="col-lg-12">
+                              <ul class="post-info post-tags">
+                                <li><i class="fa fa-tags"></i></li>
+                                <li><a href="#">Documentação</a></li>
+                                <li><a href="#">Exemplos</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                </div>
+                <!-- Pandas -->
+                <div class="col-lg-6" id="content-box">
+                  <section class="library-box" id="Manipulação de Dados e Estatística">
+                    <div class="blog-post">
+                      <div class="down-content">
+                        <span>
+                          {% if apresenta2 %}
+                            {% for results in apresenta2 %}
+                              {{ results[1] }}
+                            {% endfor%}
+                          {% endif %}
+                        </span>
+                        <p>
+                          {% if apresenta2 %}
+                            {% for results in apresenta2 %}
+                              <z class="description">{{ results[2] }}</z>
+                              <a href="#" class="btn btn-primary ver-mais">Ver mais</a>
+                            {% endfor %}
+                          {% endif %}
+                        </p>
+                        <div class="post-options">
+                          <div class="row">
+                            <div class="col-lg-12">
+                              <ul class="post-info post-tags">
+                                <li><i class="fa fa-tags"></i></li>
+                                <li><a href="#">Documentação</a></li>
+                                <li><a href="#">Exemplos</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                </div>
+                <!-- SciPy -->
+                <div class="col-lg-6" id="content-box">
+                  <section class="library-box" id="Manipulação de Dados e Estatística">
+                    <div class="blog-post">
+                      <div class="down-content">
+                        <span>
+                          {% if apresenta3 %}
+                            {% for results in apresenta3 %}
+                              {{ results[1] }}
+                            {% endfor%}
+                          {% endif %}
+                        </span>
+                        <p>
+                          {% if apresenta3 %}
+                            {% for results in apresenta3 %}
+                              <z class="description">{{ results[2] }}</z>
+                              <a href="#" class="btn btn-primary ver-mais">Ver mais</a>
+                            {% endfor %}
+                          {% endif %}
+                        </p>
+                        <div class="post-options">
+                          <div class="row">
+                            <div class="col-lg-12">
+                              <ul class="post-info post-tags">
+                                <li><i class="fa fa-tags"></i></li>
+                                <li><a href="#">Documentação</a></li>
+                                <li><a href="#">Exemplos</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                </div>
+                <!-- StatosModels -->
+                <div class="col-lg-6" id="content-box">
+                  <section class="library-box" id="Manipulação de Dados e Estatística">
+                    <div class="blog-post">
+                      <div class="down-content">
+                        <span>
+                          {% if apresenta4 %}
+                            {% for results in apresenta4 %}
+                              {{ results[1] }}
+                            {% endfor%}
+                          {% endif %}
+                        </span>
+                        <p>
+                          {% if apresenta4 %}
+                            {% for results in apresenta4 %}
+                              <z class="description">{{ results[2] }}</z>
+                              <a href="#" class="btn btn-primary ver-mais">Ver mais</a>
+                            {% endfor %}
+                          {% endif %}
+                        </p>
+                        <div class="post-options">
+                          <div class="row">
+                            <div class="col-lg-12">
+                              <ul class="post-info post-tags">
+                                <li><i class="fa fa-tags"></i></li>
+                                <li><a href="#">Documentação</a></li>
+                                <li><a href="#">Exemplos</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                </div>
+                <!-- Theano -->
+                <div class="col-lg-6" id="content-box">
+                  <section class="library-box" id="Manipulação de Dados e Estatística">
+                    <div class="blog-post">
+                      <div class="down-content">
+                        <span>
+                          {% if apresenta5 %}
+                            {% for results in apresenta5 %}
+                              {{ results[1] }}
+                            {% endfor%}
+                          {% endif %}
+                        </span>
+                        <p>
+                          {% if apresenta5 %}
+                            {% for results in apresenta5 %}
+                              <z class="description">{{ results[2] }}</z>
+                              <a href="#" class="btn btn-primary ver-mais">Ver mais</a>
+                            {% endfor %}
+                          {% endif %}
+                        </p>
+                        <div class="post-options">
+                          <div class="row">
+                            <div class="col-lg-12">
+                              <ul class="post-info post-tags">
+                                <li><i class="fa fa-tags"></i></li>
+                                <li><a href="#">Documentação</a></li>
+                                <li><a href="#">Exemplos</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                </div>
+                <!-- Tkinter -->
+                <div class="col-lg-6" id="content-box">
+                  <section class="library-box" id="Manipulação de Dados e Estatística">
+                    <div class="blog-post">
+                      <div class="down-content">
+                        <span>
+                          {% if apresenta6 %}
+                            {% for results in apresenta6 %}
+                              {{ results[1] }}
+                            {% endfor%}
+                          {% endif %}
+                        </span>
+                        <p>
+                          {% if apresenta6 %}
+                            {% for results in apresenta6 %}
+                              <z class="description">{{ results[2] }}</z>
+                              <a href="#" class="btn btn-primary ver-mais">Ver mais</a>
+                            {% endfor %}
+                          {% endif %}
+                        </p>
+                        <div class="post-options">
+                          <div class="row">
+                            <div class="col-lg-12">
+                              <ul class="post-info post-tags">
+                                <li><i class="fa fa-tags"></i></li>
+                                <li><a href="#">Documentação</a></li>
+                                <li><a href="#">Exemplos</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                </div>
+                <!-- Pydot -->
+                <div class="col-lg-6" id="content-box">
+                  <section class="library-box" id="Visualização de Dados e Dashboards">
+                    <div class="blog-post">
+                      <div class="down-content">
+                        <span>
+                          {% if apresenta7 %}
+                            {% for results in apresenta7 %}
+                              {{ results[1] }}
+                            {% endfor%}
+                          {% endif %}
+                        </span>
+                        <p>
+                          {% if apresenta7 %}
+                            {% for results in apresenta7 %}
+                              <z class="description">{{ results[2] }}</z>
+                              <a href="#" class="btn btn-primary ver-mais">Ver mais</a>
+                            {% endfor %}
+                          {% endif %}
+                        </p>
+                        <div class="post-options">
+                          <div class="row">
+                            <div class="col-lg-12">
+                              <ul class="post-info post-tags">
+                                <li><i class="fa fa-tags"></i></li>
+                                <li><a href="#">Documentação</a></li>
+                                <li><a href="#">Exemplos</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                </div>
+                <!-- Dash -->
+                <div class="col-lg-6" id="content-box">
+                  <section class="library-box" id="Visualização de Dados e Dashboards">
+                    <div class="blog-post">
+                      <div class="down-content">
+                        <span>
+                          {% if apresenta8 %}
+                            {% for results in apresenta8 %}
+                              {{ results[1] }}
+                            {% endfor%}
+                          {% endif %}
+                        </span>
+                        <p>
+                          {% if apresenta8 %}
+                            {% for results in apresenta8 %}
+                              <z class="description">{{ results[2] }}</z>
+                              <a href="#" class="btn btn-primary ver-mais">Ver mais</a>
+                            {% endfor %}
+                          {% endif %}
+                        </p>
+                        <div class="post-options">
+                          <div class="row">
+                            <div class="col-lg-12">
+                              <ul class="post-info post-tags">
+                                <li><i class="fa fa-tags"></i></li>
+                                <li><a href="#">Documentação</a></li>
+                                <li><a href="#">Exemplos</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                </div>
+                <!-- Matplotlib -->
+                <div class="col-lg-6" id="content-box">
+                  <section class="library-box" id="Visualização de Dados e Dashboards">
+                    <div class="blog-post">
+                      <div class="down-content">
+                        <span>
+                          {% if apresenta9 %}
+                            {% for results in apresenta9 %}
+                              {{ results[1] }}
+                            {% endfor%}
+                          {% endif %}
+                        </span>
+                        <p>
+                          {% if apresenta9 %}
+                            {% for results in apresenta9 %}
+                              <z class="description">{{ results[2] }}</z>
+                              <a href="#" class="btn btn-primary ver-mais">Ver mais</a>
+                            {% endfor %}
+                          {% endif %}
+                        </p>
+                        <div class="post-options">
+                          <div class="row">
+                            <div class="col-lg-12">
+                              <ul class="post-info post-tags">
+                                <li><i class="fa fa-tags"></i></li>
+                                <li><a href="#">Documentação</a></li>
+                                <li><a href="#">Exemplos</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                </div>
+                <!-- Seaborn -->
+                <div class="col-lg-6" id="content-box">
+                  <section class="library-box" id="Visualização de Dados e Dashboards">
+                    <div class="blog-post">
+                      <div class="down-content">
+                        <span>
+                          {% if apresenta10 %}
+                            {% for results in apresenta10 %}
+                              {{ results[1] }}
+                            {% endfor%}
+                          {% endif %}
+                        </span>
+                        <p>
+                          {% if apresenta10 %}
+                            {% for results in apresenta10 %}
+                              <z class="description">{{ results[2] }}</z>
+                              <a href="#" class="btn btn-primary ver-mais">Ver mais</a>
+                            {% endfor %}
+                          {% endif %}
+                        </p>
+                        <div class="post-options">
+                          <div class="row">
+                            <div class="col-lg-12">
+                              <ul class="post-info post-tags">
+                                <li><i class="fa fa-tags"></i></li>
+                                <li><a href="#">Documentação</a></li>
+                                <li><a href="#">Exemplos</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                </div>
+                <!-- Gradient Boosting -->
+                <div class="col-lg-6" id="content-box">
+                  <section class="library-box" id="Machine Learning">
+                    <div class="blog-post">
+                      <div class="down-content">
+                        <span>
+                          {% if apresenta11 %}
+                            {% for results in apresenta11 %}
+                              {{ results[1] }}
+                            {% endfor%}
+                          {% endif %}
+                        </span>
+                        <p>
+                          {% if apresenta11 %}
+                            {% for results in apresenta11 %}
+                              <z class="description">{{ results[2] }}</z>
+                              <a href="#" class="btn btn-primary ver-mais">Ver mais</a>
+                            {% endfor %}
+                          {% endif %}
+                        </p>
+                        <div class="post-options">
+                          <div class="row">
+                            <div class="col-lg-12">
+                              <ul class="post-info post-tags">
+                                <li><i class="fa fa-tags"></i></li>
+                                <li><a href="#">Documentação</a></li>
+                                <li><a href="#">Exemplos</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                </div>
+                <!-- Eli5 -->
+                <div class="col-lg-6" id="content-box">
+                  <section class="library-box" id="Machine Learning">
+                    <div class="blog-post">
+                      <div class="down-content">
+                        <span>
+                          {% if apresenta12 %}
+                            {% for results in apresenta12 %}
+                              {{ results[1] }}
+                            {% endfor%}
+                          {% endif %}
+                        </span>
+                        <p>
+                          {% if apresenta12 %}
+                            {% for results in apresenta12 %}
+                              <z class="description">{{ results[2] }}</z>
+                              <a href="#" class="btn btn-primary ver-mais">Ver mais</a>
+                            {% endfor %}
+                          {% endif %}
+                        </p>
+                        <div class="post-options">
+                          <div class="row">
+                            <div class="col-lg-12">
+                              <ul class="post-info post-tags">
+                                <li><i class="fa fa-tags"></i></li>
+                                <li><a href="#">Documentação</a></li>
+                                <li><a href="#">Exemplos</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                </div>
+                <!-- Scikit-learn -->
+                <div class="col-lg-6" id="content-box">
+                  <section class="library-box" id="Machine Learning">
+                    <div class="blog-post">
+                      <div class="down-content">
+                        <span>
+                          {% if apresenta13 %}
+                            {% for results in apresenta13 %}
+                              {{ results[1] }}
+                            {% endfor%}
+                          {% endif %}
+                        </span>
+                        <p>
+                          {% if apresenta13 %}
+                            {% for results in apresenta13 %}
+                              <z class="description">{{ results[2] }}</z>
+                              <a href="#" class="btn btn-primary ver-mais">Ver mais</a>
+                            {% endfor %}
+                          {% endif %}
+                        </p>
+                        <div class="post-options">
+                          <div class="row">
+                            <div class="col-lg-12">
+                              <ul class="post-info post-tags">
+                                <li><i class="fa fa-tags"></i></li>
+                                <li><a href="#">Documentação</a></li>
+                                <li><a href="#">Exemplos</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                </div>
+                <!-- Keras -->
+                <div class="col-lg-6" id="content-box">
+                  <section class="library-box" id="Machine Learning">
+                    <div class="blog-post">
+                      <div class="down-content">
+                        <span>
+                          {% if apresenta14 %}
+                            {% for results in apresenta14 %}
+                              {{ results[1] }}
+                            {% endfor%}
+                          {% endif %}
+                        </span>
+                        <p>
+                          {% if apresenta14 %}
+                            {% for results in apresenta14 %}
+                              <z class="description">{{ results[2] }}</z>
+                              <a href="#" class="btn btn-primary ver-mais">Ver mais</a>
+                            {% endfor %}
+                          {% endif %}
+                        </p>
+                        <div class="post-options">
+                          <div class="row">
+                            <div class="col-lg-12">
+                              <ul class="post-info post-tags">
+                                <li><i class="fa fa-tags"></i></li>
+                                <li><a href="#">Documentação</a></li>
+                                <li><a href="#">Exemplos</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                </div>
+                <!-- PyTorch -->
+                <div class="col-lg-6" id="content-box">
+                  <section class="library-box" id="Machine Learning">
+                    <div class="blog-post">
+                      <div class="down-content">
+                        <span>
+                          {% if apresenta15 %}
+                            {% for results in apresenta15 %}
+                              {{ results[1] }}
+                            {% endfor%}
+                          {% endif %}
+                        </span>
+                        <p>
+                          {% if apresenta15 %}
+                            {% for results in apresenta15 %}
+                              <z class="description">{{ results[2] }}</z>
+                              <a href="#" class="btn btn-primary ver-mais">Ver mais</a>
+                            {% endfor %}
+                          {% endif %}
+                        </p>
+                        <div class="post-options">
+                          <div class="row">
+                            <div class="col-lg-12">
+                              <ul class="post-info post-tags">
+                                <li><i class="fa fa-tags"></i></li>
+                                <li><a href="#">Documentação</a></li>
+                                <li><a href="#">Exemplos</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                </div>
+                <!-- TemsorFlow -->
+                <div class="col-lg-6" id="content-box">
+                  <section class="library-box" id="Deep Learning">
+                    <div class="blog-post">
+                      <div class="down-content">
+                        <span>
+                          {% if apresenta16 %}
+                            {% for results in apresenta16 %}
+                              {{ results[1] }}
+                            {% endfor%}
+                          {% endif %}
+                        </span>
+                        <p>
+                          {% if apresenta16 %}
+                            {% for results in apresenta16 %}
+                              <z class="description">{{ results[2] }}</z>
+                              <a href="#" class="btn btn-primary ver-mais">Ver mais</a>
+                            {% endfor %}
+                          {% endif %}
+                        </p>
+                        <div class="post-options">
+                          <div class="row">
+                            <div class="col-lg-12">
+                              <ul class="post-info post-tags">
+                                <li><i class="fa fa-tags"></i></li>
+                                <li><a href="#">Documentação</a></li>
+                                <li><a href="#">Exemplos</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                </div>
+                <!-- Arrow -->
+                <div class="col-lg-6" id="content-box">
+                  <section class="library-box" id="Deep Learning">
+                    <div class="blog-post">
+                      <div class="down-content">
+                        <span>
+                          {% if apresenta17 %}
+                            {% for results in apresenta17 %}
+                              {{ results[1] }}
+                            {% endfor%}
+                          {% endif %}
+                        </span>
+                        <p>
+                          {% if apresenta17 %}
+                            {% for results in apresenta17 %}
+                              <z class="description">{{ results[2] }}</z>
+                              <a href="#" class="btn btn-primary ver-mais">Ver mais</a>
+                            {% endfor %}
+                          {% endif %}
+                        </p>
+                        <div class="post-options">
+                          <div class="row">
+                            <div class="col-lg-12">
+                              <ul class="post-info post-tags">
+                                <li><i class="fa fa-tags"></i></li>
+                                <li><a href="#">Documentação</a></li>
+                                <li><a href="#">Exemplos</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                </div>
+                <!-- Requests -->
+                <div>
+                  <section class="library-box" id="Data e Web Scraping">
+                    <div class="blog-post">
+                      <div class="down-content">
+                        <span>
+                          {% if apresenta18 %}
+                            {% for results in apresenta18 %}
+                              {{ results[1] }}
+                            {% endfor%}
+                          {% endif %}
+                        </span>
+                        <p>
+                          {% if apresenta18 %}
+                            {% for results in apresenta18 %}
+                              <z class="description">{{ results[2] }}</z>
+                              <a href="#" class="btn btn-primary ver-mais">Ver mais</a>
+                            {% endfor %}
+                          {% endif %}
+                        </p>
+                        <div class="post-options">
+                          <div class="row">
+                            <div class="col-lg-12">
+                              <ul class="post-info post-tags">
+                                <li><i class="fa fa-tags"></i></li>
+                                <li><a href="#">Documentação</a></li>
+                                <li><a href="#">Exemplos</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                </div>
+                <!-- Beautiful Soup -->
+                <div>
+                  <section class="library-box" id="Data e Web Scraping">
+                    <div class="blog-post">
+                      <div class="down-content">
+                        <span>
+                          {% if apresenta19 %}
+                            {% for results in apresenta19 %}
+                              {{ results[1] }}
+                            {% endfor%}
+                          {% endif %}
+                        </span>
+                        <p>
+                          {% if apresenta19 %}
+                            {% for results in apresenta19 %}
+                              <z class="description">{{ results[2] }}</z>
+                              <a href="#" class="btn btn-primary ver-mais">Ver mais</a>
+                            {% endfor %}
+                          {% endif %}
+                        </p>
+                        <div class="post-options">
+                          <div class="row">
+                            <div class="col-lg-12">
+                              <ul class="post-info post-tags">
+                                <li><i class="fa fa-tags"></i></li>
+                                <li><a href="#">Documentação</a></li>
+                                <li><a href="#">Exemplos</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                </div>
+                <div>
+                  <!-- SQLAlchemy -->
+                  <section class="library-box" id="Data e Web Scraping">
+                    <div class="blog-post">
+                      <div class="down-content">
+                        <span>
+                          {% if apresenta20 %}
+                            {% for results in apresenta20 %}
+                              {{ results[1] }}
+                            {% endfor%}
+                          {% endif %}
+                        </span>
+                        <p>
+                          {% if apresenta20 %}
+                            {% for results in apresenta20 %}
+                              <z class="description">{{ results[2] }}</z>
+                              <a href="#" class="btn btn-primary ver-mais">Ver mais</a>
+                            {% endfor %}
+                          {% endif %}
+                        </p>
+                        <div class="post-options">
+                          <div class="row">
+                            <div class="col-lg-12">
+                              <ul class="post-info post-tags">
+                                <li><i class="fa fa-tags"></i></li>
+                                <li><a href="#">Documentação</a></li>
+                                <li><a href="#">Exemplos</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                </div>
+                <div>
+                  <!-- MongoDB -->
+                  <section class="library-box" id="Data e Web Scraping">
+                    <div class="blog-post">
+                      <div class="down-content">
+                        <span>
+                          {% if apresenta21 %}
+                            {% for results in apresenta21 %}
+                              {{ results[1] }}
+                            {% endfor%}
+                          {% endif %}
+                        </span>
+                        <p>
+                          {% if apresenta21 %}
+                            {% for results in apresenta21 %}
+                              <z class="description">{{ results[2] }}</z>
+                              <a href="#" class="btn btn-primary ver-mais">Ver mais</a>
+                            {% endfor %}
+                          {% endif %}
+                        </p>
+                        <div class="post-options">
+                          <div class="row">
+                            <div class="col-lg-12">
+                              <ul class="post-info post-tags">
+                                <li><i class="fa fa-tags"></i></li>
+                                <li><a href="#">Documentação</a></li>
+                                <li><a href="#">Exemplos</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="sidebar">
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="sidebar-item search">
+                    <form id="search_form" name="gs" action="/index.html" method="GET">
+                      <input type="text" id="query" name="query" placeholder="Pesquise as bibliotecas...">
+                    </form>
+                    {% if bibliotecas_results %}
+                        <h2>Resultados da pesquisa:</h2>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Nome</th>
+                                    <th>Descrição</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for result in bibliotecas_results %}
+                                    <tr>
+                                        <td>{{ result[1] }}</td>
+                                        <td>{{ result[2] }}</td>
+                                    </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    {% endif %}
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <div class="sidebar-item categories" id="categories-block">
+                    <div class="sidebar-heading">
+                      <h2>Categorias</h2>
+                    </div>
+                    <div class="content">
+                      <ul>
+                        <li><a data-category="Manipulação de Dados e Estatística">- Manipulação de Dados e Estatística</a></li>
+                        <li><a data-category="Visualização de Dados e Dashboards">- Visualização de Dados e Dashboards</a></li>
+                        <li><a data-category="Machine Learning">- Machine Learning</a></li>
+                        <li><a data-category="Deep Learning">- Deep Learning</a></li>
+                        <li><a data-category="Data e Web Scraping">- Data e Web Scraping</a></li>
+                        <li><a data-category="Data App e Banco de Dados">- Data App e Banco de Dados</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <footer>
+      <div class="container footer-pages">
+        <div class="row">
+          <div class="col-lg-12">
+            <ul class="social-icons">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="biblioteca.html">Bibliotecas</a></li>
+              <li><a href="about.html">About Us</a></li>
+            </ul>
+            <p>&copy; TTDL 2023</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="static/js/jquery.min.js"></script>
+    <script src="static/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Additional Scripts -->
+    <script src="static/js/custom.js"></script>
+    <script src="static/js/owl.js"></script>
+    <script src="static/js/slick.js"></script>
+    <script src="static/js/isotope.js"></script>
+    <script src="static/js/accordions.js"></script>
+
+    <script language = "text/Javascript"> 
+      cleared[0] = cleared[1] = cleared[2] = 0; 
+      function clearField(t){                   
+      if(! cleared[t.id]){                      
+          cleared[t.id] = 1;  
+          t.value='';         
+          t.style.color='#fff';
+          }
+      }
+    </script>
+
+  </body>
+</html>

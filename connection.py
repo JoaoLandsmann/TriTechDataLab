@@ -1,13 +1,10 @@
 from flask import Flask, render_template, request
 from flask_mysqldb import MySQL
+from sqlalchemy import create_engine
+import pandas as pd
+import pymysql
 
-app = Flask(__name__, static_folder='D:\Xampp\htdocs\Projeto-Dos-Guri')
-
-# configuração do mySQL
-app.config['MYSQL_HOST'] = 'localhost'
-app.config['MYSQL_USER'] = 'root'
-app.config['MYSQL_PASSWORD'] = ''
-app.config['MYSQL_DB'] = 'db_site'
+app = Flask(__name__, static_folder='')
 
 # inicialização do objeto MySQL
 mysql = MySQL(app)
@@ -15,48 +12,42 @@ mysql = MySQL(app)
 # definição da rota padrão
 @app.route('/index.html')
 def index():
-    # fazendo uma consulta nos módulos
-    cur = mysql.connection.cursor()
-    cur.execute("SELECT * FROM table_index")
-    data = cur.fetchall()
-    cur.close()
-    return render_template('index.html', data=data)
-
-@app.route('/bibliotecas.html')
-def bibliotecas():
-    # fazendo uma consulta nas bibliotecas
-    cur = mysql.connection.cursor()
-    cur.execute("SELECT * FROM bibliotecas")
-    data = cur.fetchall()
-    cur.close()
-    return render_template('bibliotecas.html', data=data)
-
-@app.route('/about.html')
-def about_us():
-    # about the devs
-    cur = mysql.connection.cursor()
-    cur.execute("SELECT * FROM about_us")
-    data = cur.fetchall()
-    cur.close()
-    return render_template('about.html', data=data)
-
-# rota para lidar com a pesquisa
-@app.route('/pesquisa.html', methods=['get'])
-def pesquisa():
-    # recupera o termo de pesquisa do formulário
-    query = request.args.get('query')
-
     # cria o cursor para executar a consulta
     cur = mysql.connection.cursor()
 
     # executa a consulta para pesquisar por um termo em cada uma das tabelas
-    cur.execute("SELECT * FROM bibliotecas WHERE id LIKE %s OR nome LIKE %s OR descricao LIKE %s", (f'%{query}%', f'%{query}%', f'%{query}%'))
-    bibliotecas_results = cur.fetchall()
+    consulta1 = cur.execute("SELECT * FROM bibliotecas WHERE id LIKE '1'")
+    consulta1 = cur.fetchall()
+
+    consulta2 = cur.execute("SELECT * FROM bibliotecas WHERE id LIKE '9'")
+    consulta2 = cur.fetchall()
+
+    consulta3 = cur.execute("SELECT * FROM bibliotecas WHERE id LIKE '10'")
+    consulta3 = cur.fetchall()
 
     cur.close()
 
     # retorna os resultados da pesquisa
-    return render_template('pesquisa.html', query=query, bibliotecas_results=bibliotecas_results)
+    return render_template('index.html', consulta1=consulta1, consulta2=consulta2, consulta3=consulta3)
+
+@app.route('/about.html')
+def about():
+    return render_template('about.html')
+
+# rota para lidar com a barra de pesquisa
+@app.route('/teste.html')
+def teste():
+
+
+    engine = create_engine('mysql+pymysql://root@localhost/db_site')
+      
+    query = f"SELECT * FROM bibliotecas WHERE  LIKE;"
+ 
+    df2 = pd.read_sql(query, engine)
+    df2 = pd.DataFrame(df2)
+    df2 = df2.head()
+    
+    return render_template('teste.html', df2=df2, query=query)
 
 if __name__ == '__main__':
     app.run(debug=True)
