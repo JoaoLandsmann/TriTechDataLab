@@ -1,2 +1,0 @@
-
-    cur = mysql.connection.cursor()
