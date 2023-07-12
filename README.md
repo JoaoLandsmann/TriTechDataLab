@@ -6,7 +6,7 @@ Buscamos criar uma plataforma local de estudos e consulta sobre os principais m�
 
 # Informações relevantes
 
-Banco de dados feito em MySQL utilizando o programa XAMPP para hospedagem local. 
+Banco de dados estruturado em MySQL utilizando o programa XAMPP para hospedagem local. 
 
 Obs.: Upar o banco de dados antes da inicialização do servidor.
 
