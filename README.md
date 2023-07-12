@@ -1,6 +1,6 @@
 # TTDL - TriTechDataLab
 
-Projeto em Python, HTML, CSS e Javascript.
+Projeto em Python, HTML5, CSS3 e Javascript.
 
 Buscamos criar uma plataforma local de estudos e consulta sobre os principais módulos e bibliotecas de python utilizados na Ciência de Dados.
 
