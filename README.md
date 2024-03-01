@@ -10,4 +10,4 @@ Banco de dados estruturado em MySQL utilizando o programa XAMPP para hospedagem 
 
 Obs.: Upar o banco de dados antes da inicialização do servidor.
 
-Para iniciar o o servidor, deve-se, primordialmente, iniciar o Apache e o MySQL no XAMPP, após isto, basta executar o connection.py e você poderá acessar o servidor local normalmente.
+Para iniciar o o servidor, deve-se, primordialmente, iniciar o MySQL no XAMPP, após isto, basta executar o connection.py e você poderá acessar o servidor local normalmente.
